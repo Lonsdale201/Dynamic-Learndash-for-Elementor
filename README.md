@@ -25,9 +25,23 @@ In the right section the green button: **<>Code**  click, and in the dropdown me
 
 ## V0.2 - 2024.01.08
 
-New Dynamic tags:
+**New Dynamic tags:**
 
-Learndash global (category) - User Achieved Certificates Count
+Learndash global (category)
+
+* User Achieved Certificates Count
+
+Learndash Course (category)
+
+* Certificates Link
+* - for button items and, you can set the link to the certificate returned by Learndash. This way they can access the certificate. Same as if you use the built-in shortcode.
+
+**New JetEngine Dynamic Visibility modul**
+
+* Course Certificates Available
+* - You can set items to only show or hide (depending on your submissions) if the certificate is available to the user. (this is also only available in the course single template)
+
+
 
 **Tweak already existing Dynamic tags:**
 
