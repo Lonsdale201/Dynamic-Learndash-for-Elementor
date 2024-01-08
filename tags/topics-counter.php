@@ -25,7 +25,6 @@ class Topics_Counter extends \Elementor\Core\DynamicTags\Tag {
     }
 
     protected function _register_controls() {
-        // Nincsenek szükséges kontrollok
     }
 
     public function render() {
@@ -50,6 +49,6 @@ class Topics_Counter extends \Elementor\Core\DynamicTags\Tag {
         if ($topic_count > 0) {
             echo esc_html( $topic_count );
         }
-        // Ha nincs témák, nem jelenítünk meg semmit, és az Elementor kezeli a fallbacket
+       
     }
 }
