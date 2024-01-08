@@ -19,3 +19,25 @@ If the plugins are not available, you cannot use them.
 ### How to download?
 
 In the right section the green button: **<>Code**  click, and in the dropdown menu, select the **Download ZIP** option.
+
+
+### Changelog
+
+## V0.2 - 2024.01.08
+
+New Dynamic tags:
+
+Learndash global (category) - User Achieved Certificates Count
+
+**Tweak already existing Dynamic tags:**
+
+* User Available Courses Count
+* User Completed Courses Count
+* User Course Points
+
+All these tags now can use both Text and Number category inputs.
+
+* Course Prerequisites List  -> New selectable output formatting inside the tags: List, or Inline
+
+
+## V0.1 initial release - 2024.01.07
