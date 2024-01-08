@@ -2,7 +2,7 @@
 namespace Learndash_Dynamic_Tag\Global_Tags;
 
 if ( ! defined( 'ABSPATH' ) ) {
-    exit; // Exit if accessed directly
+    exit; 
 }
 
 
@@ -57,7 +57,7 @@ class User_Completed_Courses_Count extends \Elementor\Core\DynamicTags\Tag {
     }
 
     public function get_categories() {
-        return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
+        return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY, \Elementor\Modules\DynamicTags\Module::NUMBER_CATEGORY ];
     }
 
     protected function _register_controls() {
@@ -101,7 +101,7 @@ class User_Course_Points extends \Elementor\Core\DynamicTags\Tag {
     }
 
     public function get_categories() {
-        return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
+        return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY, \Elementor\Modules\DynamicTags\Module::NUMBER_CATEGORY ];
     }
 
     protected function _register_controls() {
@@ -125,3 +125,40 @@ class User_Course_Points extends \Elementor\Core\DynamicTags\Tag {
         echo esc_html( $user_points );
     }
 }
+
+class User_Achieved_Certificates_Count extends \Elementor\Core\DynamicTags\Tag {
+
+    public function get_name() {
+        return 'user-achieved-certificates-count';
+    }
+
+    public function get_title() {
+        return __( 'User Achieved Certificates Count', 'elementor-pro' );
+    }
+
+    public function get_group() {
+        return 'learndash-global';
+    }
+
+    public function get_categories() {
+        return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY, \Elementor\Modules\DynamicTags\Module::NUMBER_CATEGORY ];
+    }
+
+    protected function _register_controls() {
+    }
+
+    public function render() {
+        if ( ! is_user_logged_in() ) {
+            echo '';
+            return;
+        }
+
+        $user_id = get_current_user_id();
+        $certificates_count = learndash_get_certificate_count( $user_id );
+
+        if ( $certificates_count > 0 ) {
+            echo esc_html( $certificates_count );
+        }
+    }
+}
+
