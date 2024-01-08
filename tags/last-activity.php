@@ -29,7 +29,7 @@ class Last_Activity extends \Elementor\Core\DynamicTags\Tag {
     public function render() {
         global $post;
     
-        // Ellenőrizzük, hogy kurzus oldalon vagyunk-e
+        // check course cpt
         if ( 'sfwd-courses' !== get_post_type( $post ) ) {
             echo '';
             return;
@@ -47,7 +47,7 @@ class Last_Activity extends \Elementor\Core\DynamicTags\Tag {
             'course_id' => $course_id,
             'post_id' => $course_id,
             'user_id'   => $user_id,
-            'activity_type' => 'course', // Megadva az activity_type
+            'activity_type' => 'course', // activity type: course
             'order'     => 'DESC',
             'per_page'  => 1
         );
@@ -55,19 +55,19 @@ class Last_Activity extends \Elementor\Core\DynamicTags\Tag {
         $activity = learndash_get_user_activity( $args );
     
         if ( !empty( $activity ) ) {
-            // Kiválasztjuk a legutóbbi aktivitást
+            // select latest activity
             $last_activity_date = $activity->activity_updated;
     
             if ( !empty( $last_activity_date ) ) {
-                // Formázás a WordPress dátum és idő beállításai szerint
+                // format to wp default settings
                 $date_format = apply_filters( 'learndash_date_time_formats', get_option( 'date_format' ) . ' ' . get_option( 'time_format' ) );
                 $formatted_date = date_i18n( $date_format, $last_activity_date );
                 echo esc_html( $formatted_date );
             } else {
-                echo ''; // Ha nincs aktivitás
+                echo ''; // no activity
             }
         } else {
-            echo ''; // Ha nincs aktivitás
+            echo ''; //  no activity
         }
     }
     
