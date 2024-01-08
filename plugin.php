@@ -39,6 +39,7 @@ class Plugin {
                 include_once('dynamic-visibility/current-lesson-finished.php');
                 include_once('dynamic-visibility/user-course-access.php');
                 include_once('dynamic-visibility/course-access-type.php');
+                include_once('dynamic-visibility/course-certificates-available.php');
             }
         }
 
