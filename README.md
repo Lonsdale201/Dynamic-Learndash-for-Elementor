@@ -38,6 +38,11 @@ Those who use jetEngine will have even more freedom, as new macro and dynamic vi
 
 *Navigate to the issue section, click the green New issue button, then select whether you want to report a bug or have a feature request.*
 
+**Is it possible to use the Learndash Elementor intergation plugin and this together?**
+
+*Of course, but unnecessary. In Elementor, you can retrieve templates natively (course, lesson, etc). The advantage of the integration is that it gives you your own widgets (just a few basics), these are for simple general needs.
+*Our plugin does not add any new ones. Instead, you can retrieve most of the course data information using dynamic tags, so you can put together any style of layout and design.*
+
 ### Changelog
 
 ## V0.2 - 2024.01.08
