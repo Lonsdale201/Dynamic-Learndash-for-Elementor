@@ -20,6 +20,23 @@ If the plugins are not available, you cannot use them.
 
 In the right section the green button: **<>Code**  click, and in the dropdown menu, select the **Download ZIP** option.
 
+### What is this plugin do?
+
+**Dynamic learndash for Elementor** brings together LearnDash and elementor with a completely different approach.
+
+It does not contain any unnecessary features, only purely those that are necessary and useful to dynamically customize course templates without any restrictions. Currently it does not contain any retrievable data for Lessons, Topics, and Groups (single template). This will be added in the future, based on user demand.
+
+Those who use jetEngine will have even more freedom, as new macro and dynamic visibility integrations are provided by the plugin.
+
+### FAQ
+
+**Do I need the Elementor integration plugin to work properly?**
+
+*No, technically it is not required. Elementor pro alone is enough, as you can create templates natively. The few widgets that the integration plugin provides can be replaced by our plugin, By retrieving the data through the dynamic tags. So there are no compromises.*
+
+**Where can I report a problem, bug?**
+
+*Navigate to the issue section, click the green New issue button, then select whether you want to report a bug or have a feature request.*
 
 ### Changelog
 
