@@ -20,7 +20,7 @@ If the plugins are not available, you cannot use them.
 
 In the right section the green button: **<>Code**  click, and in the dropdown menu, select the **Download ZIP** option.
 
-### What is this plugin do?
+## What is this plugin do?
 
 **Dynamic learndash for Elementor** brings together LearnDash and elementor with a completely different approach.
 
@@ -28,7 +28,7 @@ It does not contain any unnecessary features, only purely those that are necessa
 
 Those who use jetEngine will have even more freedom, as new macro and dynamic visibility integrations are provided by the plugin.
 
-### FAQ
+## FAQ
 
 **Do I need the Elementor integration plugin to work properly?**
 
