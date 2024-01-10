@@ -28,6 +28,8 @@ It does not contain any unnecessary features, only purely those that are necessa
 
 Those who use jetEngine will have even more freedom, as new macro and dynamic visibility integrations are provided by the plugin.
 
+> Here on github in the [wikipedia section you can find more information](https://github.com/Lonsdale201/Dynamic-Learndash-for-Elementor/wiki) about what the plugin offers.
+
 ## FAQ
 
 **Do I need the Elementor integration plugin to work properly?**
