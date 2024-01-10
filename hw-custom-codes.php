@@ -2,14 +2,14 @@
 /**
  * Plugin Name: HelloWP! | Dynamic Learndash for Elementor
  * Description: Build a better frontend for Learndash with Elementor and / or JetEngine
- * Version: 0.2
+ * Version: 0.3
  * Author: Soczó Kristóf
  * Author URI: https://hellowp.io
  * Plugin URI: https://github.com/Lonsdale201/Dynamic-Learndash-for-Elementor
  */
 
 if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly
+    exit; 
 }
 
 final class Learndash_Dynamic_Tag {
