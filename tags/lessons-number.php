@@ -46,6 +46,7 @@ class Lessons_Number extends \Elementor\Core\DynamicTags\Tag {
                 'options' => [
                     'plain' => __( 'Plain Number', 'elementor-pro' ),
                     'formatted' => __( 'Formatted Number', 'elementor-pro' ),
+                    'completed_lessons' =>__( 'Completed lessons number', 'elementor-pro' ),
                 ],
                 'default' => 'plain',
             ]
@@ -67,27 +68,28 @@ class Lessons_Number extends \Elementor\Core\DynamicTags\Tag {
             echo '';
             return;
         }
-    
+
         $settings = $this->get_settings();
         $visibility = $settings['visibility'];
         $formatting = $settings['formatting'];
-    
+
         if ( 'enrolled' === $visibility && ! sfwd_lms_has_access( $course_id, get_current_user_id() ) ) {
             echo '';
             return;
         }
-    
+
         $lessons = learndash_get_course_lessons_list( $course_id );
         $completed_lessons_count = learndash_course_get_completed_steps( get_current_user_id(), $course_id );
-    
+
         if ( 'formatted' === $formatting ) {
             $output = $completed_lessons_count . '/' . count( $lessons );
+        } elseif ('completed_lessons' === $formatting) {
+            $output = $completed_lessons_count;
         } else {
             $output = count( $lessons );
         }
-    
+
         echo esc_html( $output );
     }
-
     
 }
