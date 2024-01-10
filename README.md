@@ -45,6 +45,20 @@ Those who use jetEngine will have even more freedom, as new macro and dynamic vi
 
 ### Changelog
 
+## V0.3 - 2024.01.10
+
+* Refactored some dynamic Tags:
+
+- Course Access type
+  - Removed Visibility option
+  - Added new custom format
+  - Added special Cross-enrolled text
+- Lessons Number
+  - New Completed lessons number output
+  - Now both text and number category available for this tag
+- Last Activity
+  - New format select option (default, or custom date format)
+
 ## V0.2 - 2024.01.08
 
 **New Dynamic tags:**
