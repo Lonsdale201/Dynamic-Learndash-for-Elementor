@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: HelloWP! | Dynamic Learndash for Elementor
+ * Plugin Name: Dynamic Learndash for Elementor
  * Description: Build a better frontend for Learndash with Elementor and / or JetEngine
  * Version: 0.3
  * Author: Soczó Kristóf
- * Author URI: https://hellowp.io
+ * Author URI: https://github.com/Lonsdale201?tab=repositories
  * Plugin URI: https://github.com/Lonsdale201/Dynamic-Learndash-for-Elementor
  */
 
